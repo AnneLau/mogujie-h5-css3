@@ -1,0 +1,241 @@
+/*common书写网站公用的样式*/
+body, html {
+    min-width: 1200px;
+} 
+a{
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+}
+a:hover{
+	color:#666;
+}
+.hide{
+	display: none;
+}
+/*版心*/
+.inner{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*header部分*/
+.header{
+	background: #f2f2f2;
+	border-bottom: 1px solid #ddd;
+	height: 31px;
+	line-height: 31px;
+}
+.header .home{
+	float: left;
+}
+.header .home a{
+	display: block;
+	padding-left: 40px;
+	background: url("../images/icons.png") no-repeat 16px -234px;
+}
+/*header-top部分*/
+.header .header-top{
+	float: right;
+}
+.header .header-top .header-top-inner>li{
+	float: left;
+	margin-right: 15px;
+}
+.header .header-top .header-top-inner li.has-icon{
+	background: url("../images/icons.png") no-repeat;
+}
+.header .header-top .header-top-inner li.has-arrow{
+	padding-right: 10px;
+}
+.header .header-top .header-top-inner li.order{
+	background-position: 16px -528px;
+}
+.header .header-top .header-top-inner li.shop-cart{
+	position: relative;
+	background-position: 8px -420px;
+}
+.header .header-top .header-top-inner li.mysmallhouse{
+	background-position: 8px -566px;
+}
+.header .header-top .header-top-inner li.has-arrow{
+	padding-right: 10px;
+	position: relative;
+}
+.header .header-top .header-top-inner li.has-arrow i{
+	position: absolute;
+	right: 0;
+	top: 14px;
+	width: 7px;
+	height: 4px;
+	background: url("../images/icons.png") no-repeat -4px -476px;
+}
+.header .header-top .header-top-inner>li>a{
+	padding-left: 37px;
+	border-left: 1px solid #ddd;
+}
+.header .header-top .header-top-inner>li.first>a{
+	padding-left: 0;
+	border-left: 0;
+}
+.header .header-top .header-top-inner>li.service>a{
+	padding-left: 14px;
+}
+.header .header-top .header-top-inner>li.mysmallhouse>a{
+	padding-left: 34px;
+}
+.header .header-top .header-top-inner li .info{
+	position: absolute;
+	top: 32px;
+	left: 0;
+	width: 100px;
+	background: #eee;
+	border: 1px solid #ddd;
+	border-top: 0;
+	border-radius: 0 0 3px 3px;
+	line-height: 30px;
+	text-align: center;
+	display: none;
+}
+.header .header-top .header-top-inner li:hover .info,
+.header .header-top .header-top-inner li.cur .info{
+	display: block;
+}
+.header .header-top .header-top-inner li .info.no-info{
+	top: 32px;
+	left: -91px;
+	width: 200px;
+	height: 53px;
+	border-radius: 0 0 5px 5px;
+	line-height: 53px;
+	color: #999;
+	font-size: 12px;
+	z-index: 999;
+}
+.header .header-top .header-top-inner li .info a{
+	display: block;
+	padding: 0 20px;
+}
+.header .header-top .header-top-inner li .info li a:hover{
+	background: #e4e4e4;
+}
+/*header-mid部分*/
+.header-mid{
+	height: 90px;
+}
+.header-mid .logo{
+	float: left;
+	width: 360px;
+	height: 78px;
+}
+.header-mid .logo a,
+.header-mid .logo img{
+	display: block;
+}
+.header-mid .search{
+	float: left;
+	width: 482px;
+}
+.header-mid .search .search-inner{
+	height: 34px;
+	margin-top: 20px;
+	border-radius: 0 6px 6px 0;
+	background: #fff;
+	border: 1px solid #FF0077;
+}
+.header-mid .search .search-inner .selectbox,
+.header-mid .search .search-inner .heartop-search-from{
+	float: left;
+	line-height: 34px;
+	position: relative;
+}
+.header-mid .search .search-inner .selectbox a.group{
+	display: block;
+	color: #ff0077;
+	width: 60px;
+	text-align: center;
+	background: url("../images/red-arrow.png") no-repeat right 15px;
+}
+.header-mid .search .search-inner .selectbox .selectbox-options{
+	border: 1px solid #e5e5e5;
+	display: none;
+}
+.header-mid .search .search-inner .selectbox .selectbox-options a{
+	color: #ff0077;
+	display: block;
+	background: #fff;
+	line-height: 30px;
+}
+.header-mid .search .search-inner .selectbox .selectbox-options a:hover{
+	background: #ffeef4;
+}
+.header-mid .search .search-inner .searchtxt{
+	width: 300px;
+	padding: 0 10px;
+	height: 34px;
+	line-height: 34px;
+	border: none;
+	float: left;
+	outline: none;
+	font-size: 12px;
+}
+.header-mid .search .search-inner .res{
+	position: absolute;
+	top: 34px;
+	left: -1px;
+	width: 300px;
+	height: 286px;
+	padding: 0 10px;
+	background: #fff;
+	border: 1px solid #ff0077;
+	color: #999;
+	font-size: 12px;
+}
+.header-mid .search .search-inner .btn{
+	width: 100px;
+	font-size: 16px;	
+	color: #fff;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	background: #ff2256;
+	background-image: -webkit-linear-gradient(left top,#ff2156,#ff1c6a,#ff1681);
+	background-image: -moz-linear-gradient(left top,#ff2156,#ff1c6a,#ff1681);
+	background-image: -ms-linear-gradient(left top,#ff2156,#ff1c6a,#ff1681);
+	background-image: -o-linear-gradient(left top,#ff2156,#ff1c6a,#ff1681);
+	background-image: -linear-gradient(left top,#ff2156,#ff1c6a,#ff1681);
+	float: left;
+	cursor: pointer;
+}
+.header-mid .search .search-inner .btn:hover{
+    background-image: -webkit-linear-gradient(left top,#ff1681,#ff1c6a,#ff2156);
+	background-image: -moz-linear-gradient(left top,#ff1681,#ff1c6a,#ff2156);
+	background-image: -ms-linear-gradient(left top,#ff1681,#ff1c6a,#ff2156);
+	background-image: -o-linear-gradient(left top,#ff1681,#ff1c6a,#ff2156);
+	background-image: -linear-gradient(left top,#ff1681,#ff1c6a,#ff2156);
+}
+.header-mid .search .search-nav{
+	margin-top: 7px;
+}
+.header-mid .search .search-nav li{
+	float: left;
+	margin-right: 13px;
+}
+.header-mid .search .search-nav li a:hover{
+	color: #ff4466;
+	text-decoration: underline;
+}
+.header-mid .search .search-nav li a.red{
+	color: #ff4466;
+}
+/*红包部分*/
+.header-mid .redmoney{
+	float: right;
+}
+.header-mid .redmoney img{
+	display: block;
+	width: 220px;
+	height: 90px;
+}
+
